@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "nourr-8ed30",
+    "site": "nourr-8ed30-default",
     "public": "public",
     "ignore": [
       "firebase.json",
