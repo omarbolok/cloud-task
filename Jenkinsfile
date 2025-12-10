@@ -14,7 +14,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        withCredentials([string(credentialsId: 'firebase_token', variable: 'TOKEN')]) {
+        withCredentials([string(credentialsId: 'FIREBASE_TOKEN', variable: 'TOKEN')]) {
           sh 'firebase deploy --project nourr-8ed30 --token "$TOKEN"'
         }
       }
