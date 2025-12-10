@@ -1,8 +1,11 @@
 pipeline {
   agent any
 
-  stages {
+  tools {
+    nodejs "node16”  
+  }
 
+  stages {
     stage('Install Firebase CLI') {
       steps {
         sh 'npm install -g firebase-tools'
